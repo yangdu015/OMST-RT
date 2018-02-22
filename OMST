@@ -1,0 +1,35 @@
+setwd("E:/PhD@UIUC/2018 Spring/Epsy/Coursework/Epsy 590 CAT/Final Project")
+
+item.bank<-function(number){
+  set.seed(number)
+  a<-rnorm(number)
+  b<-rnorm(number)
+  c<-runif(number)
+  itempar<-cbind(a,b,c)
+return(itempar)
+}
+pool<-item.bank(500)
+theta.true<-rnorm(1000)
+
+OMST<-function(itempar, #items parameters
+               theta, #true thetas
+               n.stage, # number of stages
+               n.items, #number of items per stage
+               sel.method, #selection methods
+               ){
+  #1st stage
+  
+  
+    #item selection
+    #theta estimates
+  
+  #2nd stage
+  
+  #k stage
+  
+  #n.stage
+  
+  
+  
+  return(list(ability=theta.est,item.usage=item.usage))
+}
